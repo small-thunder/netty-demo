@@ -1,13 +1,9 @@
-package com.hefl.nettydemo.files;
+package com.hefl.nettydemo.nio.files;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.nio.charset.StandardCharsets;
-
-import static com.hefl.nettydemo.common.ByteBufferUtil.debugAll;
 
 /**
  * @author hefl

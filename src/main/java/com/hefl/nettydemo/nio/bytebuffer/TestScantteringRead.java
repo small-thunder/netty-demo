@@ -1,12 +1,11 @@
-package com.hefl.nettydemo.bytebuffer;
+package com.hefl.nettydemo.nio.bytebuffer;
+
+import com.hefl.nettydemo.nio.common.ByteBufferUtil;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.nio.charset.StandardCharsets;
-
-import static com.hefl.nettydemo.common.ByteBufferUtil.debugAll;
 
 /**
  * @author hefl
@@ -24,9 +23,9 @@ public class TestScantteringRead {
             buffer1.flip();
             buffer2.flip();
             buffer3.flip();
-            debugAll(buffer1);
-            debugAll(buffer2);
-            debugAll(buffer3);
+            ByteBufferUtil.debugAll(buffer1);
+            ByteBufferUtil.debugAll(buffer2);
+            ByteBufferUtil.debugAll(buffer3);
 //            channel.read();
         } catch (IOException e) {
         }

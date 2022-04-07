@@ -1,9 +1,8 @@
-package com.hefl.nettydemo.bytebuffer;
+package com.hefl.nettydemo.nio.bytebuffer;
 
 import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
 
-import static com.hefl.nettydemo.common.ByteBufferUtil.debugAll;
+import static com.hefl.nettydemo.nio.common.ByteBufferUtil.debugAll;
 
 /**
  * @author hefl

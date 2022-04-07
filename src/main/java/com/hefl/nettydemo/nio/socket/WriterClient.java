@@ -1,4 +1,4 @@
-package com.hefl.nettydemo.socket;
+package com.hefl.nettydemo.nio.socket;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

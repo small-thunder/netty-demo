@@ -1,4 +1,4 @@
-package com.hefl.nettydemo.bytebuffer;
+package com.hefl.nettydemo.nio.common;
 
 import io.netty.util.internal.MathUtil;
 import io.netty.util.internal.StringUtil;
@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
 /**
  * @author hefl
  * @date 2022/4/4 20:14
- * TODO 工具类
+ * TODO
  */
 public class ByteBufferUtil {
     private static final char[] BYTE2CHAR = new char[256];

@@ -1,4 +1,4 @@
-package com.hefl.nettydemo.socket;
+package com.hefl.nettydemo.nio.socket;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -7,13 +7,9 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.*;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 
-import static com.hefl.nettydemo.common.ByteBufferUtil.debugAll;
-import static com.hefl.nettydemo.common.ByteBufferUtil.debugRead;
+import static com.hefl.nettydemo.nio.common.ByteBufferUtil.debugAll;
 
 /**
  * @author hefl

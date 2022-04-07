@@ -1,9 +1,9 @@
-package com.hefl.nettydemo.bytebuffer;
+package com.hefl.nettydemo.nio.bytebuffer;
+
+import com.hefl.nettydemo.nio.common.ByteBufferUtil;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
-
-import static com.hefl.nettydemo.common.ByteBufferUtil.debugAll;
 
 /**
  * @author hefl
@@ -16,15 +16,15 @@ public class TestByteBuffterString {
         // 1.字符串转 ByteBuffer
         ByteBuffer buffer = ByteBuffer.allocate(10);
         buffer.put("hello".getBytes());
-        debugAll(buffer);
+        ByteBufferUtil.debugAll(buffer);
 
         // 2 Charset
         ByteBuffer hello = StandardCharsets.UTF_8.encode("hello");
-        debugAll(hello);
+        ByteBufferUtil.debugAll(hello);
 
         // 3.wrap
         ByteBuffer wrap = ByteBuffer.wrap("hello".getBytes());
-        debugAll(wrap);
+        ByteBufferUtil.debugAll(wrap);
 
         // 4.转为字符串
         String hello1 = StandardCharsets.UTF_8.decode(hello).toString();

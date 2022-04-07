@@ -1,4 +1,4 @@
-package com.hefl.nettydemo.bytebuffer;
+package com.hefl.nettydemo.nio.bytebuffer;
 
 import java.nio.ByteBuffer;
 

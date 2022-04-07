@@ -1,4 +1,4 @@
-package com.hefl.nettydemo.files;
+package com.hefl.nettydemo.nio.files;
 
 import java.io.IOException;
 import java.nio.file.*;
