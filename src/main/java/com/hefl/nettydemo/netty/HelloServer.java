@@ -19,7 +19,7 @@ public class HelloServer {
 
     public static void main(String[] args) {
         new ServerBootstrap() // 启动器 负责组装netty组件，启动服务器
-                .group(new NioEventLoopGroup()) // 组， selector   accept  read
+                .group(new NioEventLoopGroup()) // 组， selector   accept  read  事件循环组
                 .channel(NioServerSocketChannel.class)   // 选择服务器的 ServerSocketChannel 实现
                 .childHandler( // boss 负责连接  child 负责读写   决定了child 能执行哪些操作(handler)
                     new ChannelInitializer<NioSocketChannel>() {  // channel 代表和客户端进行数据读写的操作  Initializer 初始化，负责添加别的handler
